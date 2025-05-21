@@ -2,7 +2,7 @@ library flutter_dialpad;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_masked_text2/flutter_masked_text2.dart';
-import 'package:flutter_dtmf/dtmf.dart';
+// import 'package:flutter_dtmf/dtmf.dart';
 
 import 'src/flutter_dialpad.dart';
 
@@ -313,9 +313,9 @@ class _DialPadState extends State<DialPad> {
       // For numbers, and all actions except backspace
       _onKeyPressed(key.value);
       // Play the dtmf tone if enabled
-      if (widget.enableDtmf) {
-        Dtmf.playTone(digits: key.value.trim(), samplingRate: 8000, durationMs: 160);
-      }
+      // if (widget.enableDtmf) {
+      //  Dtmf.playTone(digits: key.value.trim(), samplingRate: 8000, durationMs: 160);
+     //  }
     }
 
     // notifies UI of input changed
